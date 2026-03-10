@@ -14,7 +14,6 @@
             --card-bg: #FFFFFF;
             --text-main: #333;
             --text-light: #696969;
-            --thai-red: #800000;
         }
 
         body {
@@ -172,53 +171,13 @@
             line-height: 1.6;
         }
 
-        /* --- ส่วนที่แก้ไข: คณะผู้จัดทำโฉมใหม่ --- */
-        .creators-card {
-            margin-top: 60px;
-            padding: 40px;
-            background: linear-gradient(135deg, #fdfbf7 0%, #f5eee6 100%);
-            border: 1px solid #e0d5c5;
-            border-top: 4px solid var(--gold-color);
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        .team-section {
+            text-align: right;
+            background: #f4f4f4;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 40px;
         }
-
-        .creators-title {
-            font-family: 'Prompt', sans-serif;
-            color: var(--thai-red);
-            font-size: 1.4rem;
-            margin-bottom: 25px;
-            letter-spacing: 1px;
-            display: inline-block;
-            border-bottom: 2px solid var(--gold-color);
-            padding-bottom: 5px;
-        }
-
-        .creators-list {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .creator-item {
-            font-size: 1rem;
-            color: var(--primary-dark);
-            padding: 8px;
-            border-radius: 5px;
-            background: rgba(255,255,255,0.5);
-            transition: all 0.3s ease;
-        }
-
-        .creator-item:hover {
-            background: white;
-            color: var(--gold-color);
-            transform: translateY(-2px);
-        }
-
-        /* ---------------------------------- */
 
         footer {
             text-align: center;
@@ -238,7 +197,7 @@
         @media (max-width: 768px) {
             .container { padding: 25px; margin: 10px; }
             h1 { font-size: 1.6rem; }
-            .creators-list { grid-template-columns: 1fr; }
+            .feature-grid img { width: 100% !important; }
         }
     </style>
 </head>
@@ -336,7 +295,6 @@
 
     <div style="text-align:center;">
         <h3 class="section-title">ทำความรู้จักลักษณะของกลองทัด</h3>
-        
         <img src="./อฟ.jpg" style="width:750px; margin-top: 30px;" alt="ลักษณะกลองทัด">
     </div>
 
@@ -352,15 +310,11 @@
         เครื่องดนตรีที่สืบทอดมรดกทางวัฒนธรรมและความภาคภูมิใจของสถาปัตย์ไทย"
     </div>
 
-    <div class="creators-card">
-        <div class="creators-title">คณะผู้จัดทำ</div>
-        <div class="creators-list">
-            <div class="creator-item">ณัฐวุฒิ สอนไว</div>
-            <div class="creator-item">ธนชิต บรรเจิด</div>
-            <div class="creator-item">ศศธร แก้วสูงเนิน</div>
-            <div class="creator-item">กนกภัณฑ์ คำอิน</div>
-            <div class="creator-item">ปวริศา หิรัญกุล</div>
-            <div class="creator-item">ชญาภา วงษ์ธัญญะ</div>
+    <div class="team-section">
+        <p style="font-weight: bold; color: var(--primary-dark); text-decoration: underline; margin-bottom: 10px;">คณะผู้จัดทำ</p>
+        <div class="author-name" style="font-size: 0.9rem; line-height: 1.6;">
+            ณัฐวุฒิ สอนไว | ธนชิต บรรเจิด | ศศธร แก้วสูงเนิน<br>
+            กนกภัณฑ์ คำอิน | ปวริศา หิรัญกุล | ชญาภา วงษ์ธัญญะ
         </div>
     </div>
 
@@ -368,7 +322,7 @@
         <p>เว็บไซต์นี้จัดทำขึ้นเพื่อใช้เป็นสื่อประกอบการศึกษาเกี่ยวกับกลองทัด คณะสถาปัตยกรรมศาสตร์ มหาวิทยาลัยนเรศวร<br>
         ภายใต้รายวิชา วารสารศาสตร์และสื่อการศึกษา (รหัสวิชา 814200)</p>
         <p>ภาพประกอบจาก: <a href="https://www.facebook.com/profile.php?id=100054545285694&sk=followers" target="_blank" style="color: var(--gold-color); text-decoration: none;">Facebook ชมรมกลองทัด</a></p>
-        <img src="./ลก.jpg" style="width:140px; margin-top: 10px; opacity: 0.8;" alt="Logo มหาวิทยาลัยนเรศวร">
+        <img src="./ลก.jpg" style="width:140px; margin-top: 10px; opacity: 0.8;" alt="Logo">
     </div>
 
 </div>
